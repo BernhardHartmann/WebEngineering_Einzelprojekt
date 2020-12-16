@@ -1,0 +1,118 @@
+
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.content{
+    margin-left:3%;
+    font:black;
+}
+
+.countries{
+    float: left;  
+    width: 50%;
+}
+
+.weather{
+    float: left;  
+    width: 50%;
+    background-color: white;  
+}
+.element-class{
+    float: left;
+}
+
+.cart-class{
+    margin-top: 10%;
+}
+
+.weatherdata{
+    margin-left: 1%;
+}
+
+.span-class{
+    margin-left: 5%;
+    margin-top: 60%;
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.custom-select {
+    width: 70%;
+    min-width: 15%;
+    max-width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--select-border);
+    border-radius: 0.5%;
+    padding: 0.5% 0.5%;
+    font-size: 115%;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: lightblue;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.list-container{
+    color:red;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 2% 0;
+    font-size:90%;
+    font-family: sans-serif;
+    min-width: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 2% 3%;
+    width: 10%;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+.button {
+    width: 20%;
+    height: 25%;
+	border-radius: 10rem;
+	color: #fff;
+	text-transform: uppercase;
+    font-size: 90%;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: #009879;
+}

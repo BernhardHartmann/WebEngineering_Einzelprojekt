@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/content.css">
+
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../../icons/favicon.ico">
+  <title>Einzelprojekt</title>
+
+</head>
+<body>
+
+<div class="header">
+  <a href="home.html" id="image" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a href="home.html">Home</a>
+    <a href="contents.html">Contact</a>
+    <a class="active">About</a>
+  </div>
+</div>
+<form name = "myForm" onsubmit = "return(validate());">
+
+  <div style="visibility: hidden;" class="error">
+    <i class="fa fa-times-circle" >
+      <span class="error" id="error"></span>
+    </i>
+ </div>
+
+   <div style="visibility: hidden;"class="success">
+    <i class="fa fa-check"id="success"></i>
+</div>
+
+  <div class="classDiv">
+    <table cellspacing = "2" cellpadding = "2">
+      
+      <tr>
+          <td><label for="fname">Name</label></td>
+          <td><input type = "text" name = "Name" /></td>
+      </tr>
+      
+      <tr>
+          <td><label for="fname">email</label></td>
+          <td><input type = "email" name = "EMail" /></td>
+      </tr>
+      
+      <tr>
+          <td><label for="fname">Password</label></td>
+          <td><input type = "password" name = "Password" /></td>
+      </tr>
+      
+      <tr>
+          <td><label for="fname">Country</label></td>
+          <td>
+            <select name = "Country">
+                <option value = "-1" selected>[choose yours]</option>
+                <option value = "1">USA</option>
+                <option value = "2">UK</option>
+                <option value = "3">INDIA</option>
+            </select>
+          </td>
+      </tr>
+      
+      <tr>
+          <td></td>
+          <td><input type = "submit" value = "Submit" /></td>
+      </tr>
+      
+    </table>
+  </div>
+</form>     
+
+<script src="js/form.js"></script>
+</body>
+</html>

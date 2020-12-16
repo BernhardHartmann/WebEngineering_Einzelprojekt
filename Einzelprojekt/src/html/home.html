@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../icons/favicon.ico">
+    <title>Einzelprojekt</title>
+
+
+    
+
+</head>
+<body>
+
+<div class="header">
+ <a href="home.html" id="image" class="logo"><img src = "../../icons/weather.png"></img> CompanyLogo</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="contents.html">Contents</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+
+<div class="content">
+  <div class="countries">
+    <h1 id="weather-data">Weather Data to countries</h1>
+
+    <div id="parent"></div>
+    <div class="cart-class" id="cart">
+      <h2>Favourite countries (cart)</h1>
+        <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
+
+        <ol id="ol-id">
+
+        </ol>
+    </div>
+   
+  </div>
+
+  <div class="weather">
+
+    <div  class="weatherdata" id="weather-info">
+      <h1 id="country">Country: </h1>
+      <h2 id="capital">Capital: </h2>
+      
+     
+        <span id="weather-desc"></span><br>
+        <span><img id="show-icon"></img></span>
+        
+      </ul>
+      <img id="show-icon"></img>
+    </div>
+  </div>
+</div>
+
+
+  <script src="js/mainJS.js" type="module"></script>
+  <script>
+    function filterFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("ol-id");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("button")[0];
+            console.log(a.textContent);
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
