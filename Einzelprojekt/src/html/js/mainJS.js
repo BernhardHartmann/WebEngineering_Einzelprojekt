@@ -132,7 +132,7 @@ var app = (function() {
     }
 
     let _detail = function(element, capital,isButton) {
-        let url = "http://api.openweathermap.org/data/2.5/weather?q="+capital+"&appid=a1602e990fc84e3b3175c307fef23c44";
+        let url = "https://api.openweathermap.org/data/2.5/weather?q="+capital+"&appid=a1602e990fc84e3b3175c307fef23c44";
 
         handleURL(url).then(response => {
             //console.log(response);
