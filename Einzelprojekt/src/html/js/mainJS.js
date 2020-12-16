@@ -174,6 +174,7 @@ var app = (function() {
         img.src ="../../icons/delete.png";
         img.addEventListener("click", function() { 
             button_show_data.remove(); 
+            li.remove();
             img.remove(); 
         });
         a.appendChild(img);
